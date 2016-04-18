@@ -20,7 +20,7 @@
 		result = x
 	end
 
-puts x.to_s + " => " + result.to_s
+puts "#{x.to_s} => #{result.to_s}"
 			
 end
 
