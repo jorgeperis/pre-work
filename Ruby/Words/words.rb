@@ -3,7 +3,7 @@ phrase = gets.chomp
 
 def order_nosym(sentence)
 
-	#remove punctuation characters ||  ^ -> starts ; \w -> all letters upcase and downcase and numbers ; \s -> spaces
+	#remove punctuation characters ||  ^ -> Matches any single character not in brackets ; \w -> all letters upcase and downcase and numbers ; \s -> spaces
 	sentence.gsub!(/[^\w\s]/,'')  
 
 	#Convert string to array(split) and order using upcase
