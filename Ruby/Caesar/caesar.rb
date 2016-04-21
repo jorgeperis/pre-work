@@ -20,8 +20,8 @@ rest = ((33.chr)..(126.chr)).to_a	#Create array of rest of characters
 #minus downcase letters, upcase letters, digits(\w) and spaces(\s)
 hash = {down => /[a-z]/, up => /[A-Z]/ , digit => /[0-9]/, rest => /[^\w\s]/}	
 
-#function to change de character 'x' by the new cipher character, creating loops in downcase letters, upcase letters, digits and rest
-# the function does ..x,y,z,a,b,c.. ; ..X,Y,Z,A,B,C.. ; ..7,8,9,0,1,2.. ; ..|,},~,!,",#
+#function to change the character 'x' by the new cipher character, creating loops in downcase letters, upcase letters, digits and rest
+# the function does ..x,y,z,a,b,c.. ; ..X,Y,Z,A,B,C.. ; ..7,8,9,0,1,2.. ; ..|,},~,!,",# 
 def cipher(range,name,num,x)
 
 	res = x.ord + num							#.ord of the future character
