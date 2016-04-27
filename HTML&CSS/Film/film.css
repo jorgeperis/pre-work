@@ -1,0 +1,110 @@
+body {
+	background-image: url("rollo.png");
+	font-family: "Helvetica";
+}
+
+header {
+	width: 100%;
+	height:100px;
+	background-color: #4B5152;
+	border-bottom:5px solid white;
+	color:white;	
+}
+
+header p {
+	font-size: 60px;
+	padding-top: 10px;
+	margin-top:0px;
+	text-align: center;
+}
+
+header p span {
+	color: #F18E2D;
+}
+
+#article {
+	width:1000px;
+	height: 990px;
+	margin:auto;
+	background-color: #F18E2D;
+	border: 1px solid #4B5152;
+}
+
+section {
+	width: 440px;
+	height: 600px;
+	float:left;
+	margin:30px 0px 30px 30px;
+}
+
+aside {
+	width: 430px;
+	height: 600px;
+	float:right;
+	margin: 30px 30px 30px 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 1px solid #4B5152;
+	background-color: white;
+	border-radius: 5px;
+}
+
+aside h1 {
+	text-decoration: underline;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+aside h3 {
+	font-variant: small-caps;
+}
+
+aside p:last-child {
+    text-align: right;
+}
+
+article {
+	clear:both;
+	width: 920px;
+	height: 300px;
+	margin: auto;
+	padding: 0px 10px 10px 10px;
+	background-color: white;
+	border-radius: 5px;
+	border:1px solid #4B5152;
+}
+
+#related li {
+	display:inline;
+	padding-left: 50px;
+}
+
+#related li a {
+	text-decoration: none;
+	color:black;
+}
+
+#related li a:hover {
+	text-decoration: underline;
+	color:black;
+}
+
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: #4B5152;
+	border-top: 5px solid white;
+}
+#logo {
+
+	width:178px;
+	margin:auto;
+	padding-top: 20px;
+}
+
+#name {
+	text-align: center;
+	padding-top: 5px;
+	font-size: 0.7em;
+	color:#F18E2D;
+}
