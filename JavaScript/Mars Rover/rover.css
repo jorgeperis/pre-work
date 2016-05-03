@@ -1,0 +1,59 @@
+#grid {
+	width:400px;
+	height:400px;
+	margin:auto;
+	border: 3px solid white;
+}
+
+#grid div {
+	width:40px;
+	height:40px;
+	float:right;
+	border:1px solid #4475b2;
+	margin:-1px;
+	text-align:center;
+	font-size: 20px;
+	font-family: Impact;
+	line-height: 40px; /* to align verticaly the text */
+	background-color: #4883bf;
+	font-weight:bolder;
+
+}
+body {
+	background-color: #365d89;
+}
+h1 {
+	color: #333333;
+	color: white;
+	font-family: Impact;
+	font-size: 150px;
+	font-weight:bolder;
+	text-align:center;
+}
+p {
+	color:white;
+	margin-top:-100px;
+	text-align:center;
+	font-style:bold;
+	font-size:20px;
+}
+
+#play {
+	text-align:center;
+	font-family:Impact;
+	font-size:20px;
+	font-weight:bolder;
+	color:white;
+	line-height: 30px;
+	width:100px;
+	height:30px;
+	border:1px solid white;
+	margin:auto;
+	background-color: #4883bf;
+	margin-top:50px;
+}
+
+#play:hover {
+	background-color: #365d89;
+	cursor: hand;
+}
