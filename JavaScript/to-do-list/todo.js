@@ -11,17 +11,13 @@ window.onload = function() {
   var doneButton = document.getElementById('done-button');
   doneButton.addEventListener('click', markAsDone, false);
 
-
-
-  var  text_input= document.getElementById('todo-input');
-
-function addToDoItem() {    
+function addToDoItem() { 
+    var  text_input= document.getElementById('todo-input');   
     var text_output = document.createElement('li');
     text_output.innerHTML = text_input.value;
     var insert = document.getElementsByClassName('todo-list-items');
     insert[0].appendChild(text_output);
     text_input.value = "";
-
   }
 
   function markAsDone() {
@@ -29,7 +25,6 @@ function addToDoItem() {
     doneButton.innerHTML = "Liked!";
     document.querySelector('h1').style.color = "red";
 
-    
     text_input = document.querySelector('.todo-list-items li');
     if(text_input !== null){
       var insert = document.getElementsByClassName('done-list-items');
@@ -37,6 +32,5 @@ function addToDoItem() {
       text_input.classList.add('done');
     }
   }
-  
 }
 
