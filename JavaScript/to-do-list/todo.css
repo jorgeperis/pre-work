@@ -46,7 +46,7 @@ h1 {
 
 #done-button {
   background-color: #3489B1;
-  width: 15%;
+  width: 20%;
   border-radius: 5px;
   border-style: none;
   height: 35px;
@@ -64,4 +64,13 @@ li {
 
 .done {
   text-decoration: line-through;
+}
+
+#to-do-button {
+  background-color: #EC3509;
+  width: 20%;
+  height:35px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 16px;
 }

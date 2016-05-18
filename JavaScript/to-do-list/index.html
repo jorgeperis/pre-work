@@ -15,16 +15,17 @@
     <div class="todo-list"> 
       <h2>To Do</h2>
       <ul class="todo-list-items">
-        <button id="done-button">Done</button>
-        <li> Finish this exercise </li>
-        <li> Give myself a high five!</li>
+        <button id="done-button">Mark Done</button>
+        <li class="todo"><INPUT type=radio name="todo"> Finish this exercise </li>
+        <li class="todo"><INPUT type=radio name="todo"> Give myself a high five!</li>
         <!-- the addToDoItem function should add a new list item here -->
       </ul>
     </div>
     <div class="done-list">
       <h2>Done!</h2>
       <ul class="done-list-items">
-        <li class="done">Read the chapter on DOM manipulation</li>
+        <button id="to-do-button">Mark To Do</button>
+        <li class="done"><INPUT type=radio name="done"> Read the chapter on DOM manipulation</li>
         <!-- the markAsDone function should add a new list item here -->
       </ul>
     </div>

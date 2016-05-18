@@ -11,12 +11,17 @@ window.onload = function() {
   var doneButton = document.getElementById('done-button');
   doneButton.addEventListener('click', markAsDone, false);
 
+  var todoButton = document.getElementById('to-do-button');
+  todoButton.addEventListener('click',markAsToDo,false);
+
+
 function addToDoItem() { 
     var  text_input= document.getElementById('todo-input');   
-    var text_output = document.createElement('li');
-    text_output.innerHTML = text_input.value;
-    var insert = document.getElementsByClassName('todo-list-items');
-    insert[0].appendChild(text_output);
+    var liToListToDo = document.createElement('li');
+    var toDoListItems = document.getElementsByClassName('todo-list-items');
+    liToListToDo.innerHTML = "<INPUT type=radio name='todo'> "+text_input.value;
+    liToListToDo.classList.add('todo');
+    toDoListItems[0].appendChild(liToListToDo);
     text_input.value = "";
   }
 
@@ -25,12 +30,39 @@ function addToDoItem() {
     doneButton.innerHTML = "Liked!";
     document.querySelector('h1').style.color = "red";
 
-    text_input = document.querySelector('.todo-list-items li');
-    if(text_input !== null){
-      var insert = document.getElementsByClassName('done-list-items');
-      insert[0].appendChild(text_input);
-      text_input.classList.add('done');
+    var toDoListInput = document.getElementsByName("todo");
+
+    for(i=0;i<toDoListInput.length;i++) {
+      if (toDoListInput[i].checked){
+        var liToDo = document.getElementsByClassName('todo');
+        var doneListItems = document.getElementsByClassName('done-list-items');
+        doneListItems[0].appendChild(liToDo[i]);
+        document.querySelector('.done-list-items .todo input').name="done";
+        document.querySelector('.done-list-items .todo').className="done";
+
+      }
+    }
+  }
+
+function markAsToDo() {
+    
+    var doneListInput = document.getElementsByName("done");
+
+    for(i=0;i<doneListInput.length;i++) {
+      if (doneListInput[i].checked){
+        var liDone = document.getElementsByClassName('done');
+        var toDoListItems = document.getElementsByClassName('todo-list-items');
+        toDoListItems[0].appendChild(liDone[i]);
+        document.querySelector('.todo-list-items .done input').name="todo";
+        document.querySelector('.todo-list-items .done').className="todo";
+
+      }
     }
   }
 }
 
+
+
+
+
+  
