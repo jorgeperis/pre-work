@@ -185,7 +185,7 @@ function movement(text) {
           goForward(myRover)
           break;
       }
-      console.log("\xa1Emergency stop, near to crash!");
+      alert("\xa1Emergency stop, near to crash!");
       print_console();
       return intro();
     }
